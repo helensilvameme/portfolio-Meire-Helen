@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Portfólio profissional de Meire Helen da Silva Reis: experiência prática em inteligência artificial generativa, tarefas automatizadas, programação, projetos e impacto socioambiental." name="description"/>
+<meta content="#f1faf4" name="theme-color"/>
+<meta content="website" property="og:type"/>
+<meta content="Meire Helen | IA aplicada, tecnologia e impacto socioambiental" property="og:title"/>
+<meta content="Projetos e evidências de aplicação de IA, automação, desenvolvimento de sistemas, liderança e sustentabilidade." property="og:description"/>
+<title>Meire Helen | Inteligência artificial aplicada, tecnologia e sustentabilidade</title>
+<style>
+    :root{--ink:#17313a;--navy:#112c38;--navy-2:#183c49;--teal:#0b776f;--mint:#b0f5d0;--paper:#f6f5f0;--white:#fff;--line:#dbe2df;--muted:#50646b;--warm:#ecefe5;--card:#fff;--shadow:0 16px 38px rgba(17,44,56,.075)}
+    *,*::before,*::after{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:80px}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.65}
+    a{color:inherit}a:hover{text-decoration-color:var(--teal)}
+    a:focus-visible,summary:focus-visible{outline:3px solid #13aa90;outline-offset:4px}
+    .wrap{max-width:1130px;width:calc(100% - 42px);margin:0 auto}
+    .skip{position:absolute;top:-60px;left:10px;background:white;color:#111;padding:10px;z-index:100}.skip:focus{top:9px}
+    .site-head{position:sticky;z-index:30;top:0;background:rgba(17,44,56,.97);color:#fff;border-bottom:1px solid rgba(255,255,255,.1)}
+    .nav{min-height:72px;display:flex;align-items:center;gap:24px;justify-content:space-between}
+    .logo{font-weight:800;letter-spacing:-.02em;text-decoration:none;white-space:nowrap;font-size:1.04rem}
+    .logo span{color:var(--mint)}
+    .nav-links{display:flex;gap:21px;align-items:center;flex-wrap:wrap}.nav-links a{font-size:.86rem;text-decoration:none;color:#e3eeeb}.nav-links a:hover{color:var(--mint)}
+    .hero{position:relative;overflow:hidden;background:var(--navy);color:#fff;padding:95px 0 105px}
+    .hero:before{content:"";position:absolute;width:490px;height:490px;right:-110px;top:-170px;border-radius:50%;border:1px solid rgba(176,245,208,.2);box-shadow:0 0 0 75px rgba(176,245,208,.025),0 0 0 150px rgba(176,245,208,.025)}
+    .hero-grid{position:relative;display:grid;grid-template-columns:minmax(0,1fr) 285px;gap:55px;align-items:center}
+    .eyebrow{font-size:.73rem;text-transform:uppercase;letter-spacing:.18em;font-weight:800;color:#b9ffdb}
+    .hero h1{font-family:Georgia,Times New Roman,serif;font-size:clamp(3rem,6vw,5.3rem);line-height:1.05;letter-spacing:-.047em;margin:17px 0 24px;font-weight:600}
+    .hero h1 em{color:var(--mint);font-style:normal}
+    .hero p{color:#d6e5e3;max-width:710px;font-size:1.10rem;line-height:1.8}
+    .actions{display:flex;flex-wrap:wrap;gap:13px;margin-top:33px}
+    .btn{display:inline-block;text-decoration:none;padding:13px 21px;border-radius:7px;font-weight:750;font-size:.88rem;border:1px solid var(--mint);transition:transform .12s}
+    .btn:hover{transform:translateY(-2px)}.btn.primary{color:var(--navy);background:var(--mint)}.btn.ghost{color:#fff;background:transparent;border-color:rgba(255,255,255,.45)}
+    .hero-card{border:1px solid rgba(255,255,255,.23);background:linear-gradient(155deg,rgba(176,245,208,.13),rgba(255,255,255,.04));padding:29px;border-radius:15px;box-shadow:0 23px 70px rgba(0,0,0,.13)}
+    .hero-card .label{color:var(--mint);font-size:.72rem;text-transform:uppercase;letter-spacing:.14em;font-weight:800}.hero-card strong{font-family:Georgia,serif;font-size:1.6rem;line-height:1.25;display:block;margin:16px 0}.hero-card p{font-size:.9rem;line-height:1.7;margin:0}
+    .hero-card .rule{height:1px;background:rgba(255,255,255,.25);margin:23px 0}
+    section.content{padding:83px 0}.alt{background:#eef1ed}.section-head{max-width:815px;margin-bottom:35px}
+    .section-head h2{font-family:Georgia,Times New Roman,serif;font-size:clamp(2.15rem,4vw,3.1rem);letter-spacing:-.035em;line-height:1.17;margin:10px 0 13px;font-weight:600}
+    .section-head p{margin:0;color:var(--muted);font-size:1.03rem}.small-label{font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--teal);font-weight:800}
+    .lead{display:grid;grid-template-columns:1.45fr 1fr;gap:35px;align-items:start}
+    .lead p{font-size:1.08rem;margin-top:0}.highlight-list{display:grid;gap:12px}.highlight{background:#fff;border:1px solid var(--line);border-left:4px solid var(--teal);padding:17px 21px;border-radius:7px;font-size:.95rem}.highlight b{display:block;margin-bottom:3px}
+    .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:27px 24px;box-shadow:var(--shadow);display:flex;flex-direction:column;min-height:300px}
+    .card .number{font-size:.72rem;font-weight:800;letter-spacing:.13em;color:var(--teal)}
+    .card h3{font-family:Georgia,serif;font-size:1.43rem;line-height:1.24;margin:19px 0 13px}.card p{margin:0;color:var(--muted);font-size:.92rem;flex:1}
+    .pillset{display:flex;gap:7px;flex-wrap:wrap;margin:20px 0 19px}.pill{display:inline-block;border-radius:100px;padding:5px 9px;background:#e9f3ee;color:#24675e;font-size:.72rem;font-weight:700;line-height:1.2}
+    .card a.more{margin-top:8px;font-size:.85rem;font-weight:800;text-decoration-thickness:1px;text-underline-offset:4px;color:#0c665f;align-self:flex-start}
+    .timeline{display:grid;grid-template-columns:1fr 1fr;gap:17px}
+    .job{background:white;border:1px solid var(--line);padding:25px;border-radius:11px}
+    .job .period{font-size:.77rem;font-weight:800;color:var(--teal)}.job h3{font-size:1.07rem;margin:8px 0 5px}.job .where{font-size:.87rem;font-weight:700;color:#57696f;margin-bottom:12px}.job p{margin:0;font-size:.91rem;color:var(--muted)}
+    .ai-box{display:grid;grid-template-columns:1.13fr .87fr;gap:30px;align-items:stretch}
+    .ai-panel{background:var(--navy);color:white;border-radius:14px;padding:34px}.ai-panel h3{font-family:Georgia,serif;font-size:1.85rem;font-weight:500;line-height:1.3;margin:10px 0 18px}.ai-panel p{color:#d8e7e4}.ai-panel ul{padding-left:20px;color:#e4efee}.ai-panel li{margin:9px 0}
+    .ai-note{border:1px solid var(--line);border-radius:14px;padding:34px;background:white}.ai-note h3{margin:0 0 16px;font-size:1.17rem}.ai-note p{color:var(--muted);font-size:.96rem}.ai-note strong{color:var(--ink)}
+    .two{display:grid;grid-template-columns:1fr 1fr;gap:17px}.feature{background:#fff;border:1px solid var(--line);border-radius:11px;padding:27px}.feature h3{font-family:Georgia,serif;font-size:1.45rem;margin:0 0 9px}.feature p{margin:0;color:var(--muted);font-size:.95rem}
+    .education{display:flex;flex-wrap:wrap;gap:10px}.education div{background:white;border:1px solid var(--line);padding:13px 16px;border-radius:7px;font-size:.9rem}
+    .footer{padding:65px 0 30px;background:var(--navy);color:white}.foot-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px}.footer h2{font-family:Georgia,serif;font-size:clamp(2rem,4vw,3rem);margin:10px 0}.footer p{color:#cfe0dd;max-width:530px}
+    .contact{display:grid;align-content:center;gap:16px}.contact a{color:var(--mint);word-break:break-word;display:block}.fine{margin-top:53px;padding-top:20px;border-top:1px solid rgba(255,255,255,.18);font-size:.76rem;color:#bad0cf}
+    @media(max-width:900px){.hero-grid,.lead,.ai-box,.foot-grid{grid-template-columns:1fr}.hero-card{max-width:590px}.grid{grid-template-columns:repeat(2,1fr)}.hero{padding:70px 0}.nav{align-items:flex-start;padding:15px 0;flex-direction:column;gap:10px}.nav-links{gap:12px 20px}}
+    @media(max-width:640px){.wrap{width:calc(100% - 32px)}.grid,.timeline,.two{grid-template-columns:1fr}.hero{padding:62px 0 68px}.hero h1{font-size:2.75rem}.nav-links a{font-size:.78rem}section.content{padding:60px 0}.card{min-height:unset}.contact{gap:10px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+  
+    .card-links{display:flex;align-items:flex-start;flex-direction:column;gap:9px;margin-top:auto}
+    .card-links .more{margin-top:0}
+    .evidence-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+    .proof{border:1px solid var(--line);background:#fff;border-radius:11px;padding:22px 25px}
+    .proof small{font-weight:800;color:var(--teal);font-size:.72rem;text-transform:uppercase;letter-spacing:.12em}
+    .proof h3{font-size:1.07rem;margin:9px 0 6px}
+    .proof p{font-size:.9rem;color:var(--muted);margin:0 0 12px}
+    .proof a{font-size:.87rem;color:#075f58;font-weight:750;text-underline-offset:4px}
+    .distinction{margin:30px 0 0;padding:20px 25px;border-left:4px solid var(--teal);background:white;border-radius:7px}
+    .distinction p{margin:0;font-size:.94rem;color:var(--muted)}
+    .skills{display:flex;flex-wrap:wrap;gap:9px}
+    .skills span{border:1px solid #b7cfca;background:white;border-radius:100px;padding:7px 12px;font-size:.86rem}
+    .education div{flex:1 1 240px}
+    @media(max-width:640px){.evidence-grid{grid-template-columns:1fr}.proof{padding:20px}}
+
+    /* PALETA 2026 · INOVAÇÃO + SUSTENTABILIDADE */
+    :root{
+      --ink:#173d32; --navy:#175941; --navy-2:#247955; --teal:#137b53;
+      --mint:#c4efd4; --paper:#f7fbf8; --white:#fff;
+      --line:#d4e9db; --muted:#49675a; --warm:#eef8ef;
+      --card:#fff; --shadow:0 16px 38px rgba(31,112,74,.075)
+    }
+    body{background:var(--paper);color:var(--ink)}
+    a:focus-visible,summary:focus-visible{outline-color:#147d55}
+    .site-head{
+      background:rgba(251,255,252,.96);color:var(--ink);
+      border-bottom:1px solid #d6ebdc;
+      box-shadow:0 2px 12px rgba(25,104,65,.035);
+      backdrop-filter:blur(12px)
+    }
+    .logo span{color:#167d54}
+    .nav-links a{color:#305a46}
+    .nav-links a:hover{color:#116841}
+    .hero{
+      color:var(--ink);
+      background:
+        radial-gradient(ellipse at 83% 0%,rgba(153,222,177,.38),transparent 45%),
+        radial-gradient(ellipse at 10% 110%,rgba(172,235,197,.24),transparent 45%),
+        linear-gradient(118deg,#f2fbf4 1%,#e7f8ec 47%,#e0f5e9 100%);
+      border-bottom:1px solid #cfebda
+    }
+    .hero:before{
+      border:1px solid rgba(38,143,90,.21);
+      box-shadow:0 0 0 75px rgba(65,169,112,.05),0 0 0 150px rgba(65,169,112,.04)
+    }
+    .eyebrow{color:#1a7653}
+    .hero h1{color:#143b2d}
+    .hero h1 em{color:#218756}
+    .hero p{color:#456958}
+    .btn{border-color:#147a50;border-radius:8px}
+    .btn.primary{color:#fff;background:#18784f;box-shadow:0 8px 22px rgba(22,122,79,.14)}
+    .btn.primary:hover{background:#116642}
+    .btn.ghost{color:#185c3e;background:rgba(255,255,255,.66);border-color:#87c7a4}
+    .btn.ghost:hover{background:#fff}
+    .hero-card{
+      color:#173d32;
+      background:rgba(255,255,255,.78);
+      border:1px solid rgba(117,188,142,.46);
+      box-shadow:0 24px 65px rgba(45,115,75,.105)
+    }
+    .hero-card .label{color:#187750}
+    .hero-card p{color:#537064}
+    .hero-card .rule{background:#d4e8dc}
+    section.content.alt,.alt{background:#eff9f1}
+    .highlight,.feature,.job,.proof,.card,.ai-note,.education div{
+      border-color:var(--line);
+      box-shadow:0 8px 25px rgba(35,106,68,.045)
+    }
+    .highlight{background:#fff;border-left-color:#26a066}
+    .card{box-shadow:var(--shadow)}
+    .card .number,.job .period{color:#147a52}
+    .pill{background:#e7f7eb;color:#236044}
+    .card a.more,.proof a{color:#116b47}
+    .ai-panel{
+      background:linear-gradient(145deg,#dcf5e5,#cbefd9);
+      border:1px solid #9dd4b2;
+      color:#184432;
+      box-shadow:0 12px 34px rgba(39,128,78,.07)
+    }
+    .ai-panel p,.ai-panel ul{color:#305e45}
+    .ai-note{background:#fff}
+    .distinction{background:#f7fffa;border-left-color:#20895c}
+    .skills span{border-color:#b9dfc7;background:#fff}
+    .footer{
+      color:#153e2d;
+      background:linear-gradient(125deg,#e5f8eb 0%,#d2efdc 100%);
+      border-top:1px solid #bedfc9
+    }
+    .footer p{color:#456955}
+    .contact a{color:#116841}
+    .fine{color:#567365;border-top-color:#bddcc8}
+    @media(prefers-color-scheme:dark){:root{color-scheme:light}}
+
+
+/* REVISÃO: foco em evidência, estudos de caso e demonstração (nov. 2026) */
+.cases-section{padding-top:65px!important}
+.cases-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.case-card{background:#fff;border:1px solid #d2e5d8;border-radius:16px;padding:28px 30px;box-shadow:0 12px 38px rgba(31,112,74,.065);display:flex;flex-direction:column}
+.case-primary{grid-column:1/-1;background:linear-gradient(116deg,#fff,#f0fbf4)}
+.case-kicker{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;color:#1c6d4c;font-size:.76rem;font-weight:800;letter-spacing:.075em}
+.case-stage{color:#416052;font-weight:700;letter-spacing:0;background:#edf8f0;padding:3px 9px;border:1px solid #cde5d4;border-radius:40px}
+.case-card h3{font-family:Georgia,serif;font-size:clamp(1.55rem,2.6vw,2.05rem);margin:15px 0 10px;line-height:1.23}
+.case-summary{font-size:1rem;color:var(--muted);margin:0 0 18px}
+.case-steps{display:grid;gap:11px;margin:0 0 20px}
+.case-steps div{border-top:1px solid #d6ebdb;padding-top:11px}
+.case-steps dt{font-weight:800;color:#20573c;font-size:.82rem;text-transform:uppercase;letter-spacing:.045em}
+.case-steps dd{margin:4px 0 0;font-size:.93rem;color:var(--muted)}
+.case-actions{display:flex;flex-wrap:wrap;gap:11px 20px;margin-top:auto}
+.case-actions a{font-size:.89rem;color:#08643f;font-weight:800;text-underline-offset:4px}
+.demo-grid{display:grid;grid-template-columns:.88fr 1.12fr;gap:26px}
+.calc-form,.calc-results{padding:28px 32px;border-radius:16px;border:1px solid #d2e6d9;background:#fff}
+.calc-form{display:grid;grid-template-columns:1fr;gap:7px;align-content:start}
+.calc-form label{color:#204d38;font-weight:800;font-size:.92rem;margin-top:8px}
+.calc-form label small{font-size:.81rem;font-weight:400;color:#597065}
+.calc-form input,.calc-form select{width:100%;min-width:0;font:inherit;padding:11px 12px;border:1px solid #9cbaa8;border-radius:8px;background:#fff;color:#1d3c2f}
+.calc-form input:focus,.calc-form select:focus{outline:3px solid #a4e9bd;border-color:#167c52}
+.calc-btn{margin-top:15px;cursor:pointer;font:inherit;font-size:.92rem;background:#196745!important;color:#fff!important;border-color:#196745!important}
+.calc-results{display:flex;flex-direction:column;justify-content:center;background:#f4fbf5}
+.result-value{display:flex;align-items:baseline;gap:13px;flex-wrap:wrap;margin:12px 0 0}
+.result-value strong{font-size:clamp(2.5rem,6vw,4rem);font-family:Georgia,serif;line-height:1.2;color:#16583b}
+.result-value span{font-size:1rem;color:#4e6356}
+#resultado-explicacao{color:var(--muted);font-size:.91rem}
+.breakdown{display:grid;gap:0;margin:11px 0 18px;border-top:1px solid #c9e2d1}
+.breakdown div{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid #c9e2d1;padding:10px 0;font-size:.91rem}
+.calc-note,.demo-footnote{font-size:.84rem!important;line-height:1.6;color:#496457}
+.demo-footnote{margin-top:20px}
+.method-block{background:linear-gradient(110deg,#ecfaf0,#fff);border:1px solid #cce6d3;border-radius:16px;padding:25px 30px;margin:0 0 28px}
+.method-block h3{font-family:Georgia,serif;font-size:1.52rem;margin:5px 0 9px}
+.method-block p{color:var(--muted);margin:0}
+.method-block ol{padding-left:20px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 30px;margin:20px 0}
+.method-block li{font-size:.91rem;color:#496457;padding-left:2px}
+.method-block .method-note{font-size:.83rem;border-top:1px solid #d3e9d9;padding-top:12px}
+.skillmap{background:#eff9f2;padding:22px 26px;border-radius:13px;margin:30px 0 0;border:1px solid #d2e7d7}
+.skillmap h3{font-family:Georgia,serif;margin:0 0 14px;font-size:1.35rem}
+.skillmap-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px 18px}
+.skillmap-grid p{font-size:.88rem;margin:0;background:white;border:1px solid #d6e8db;padding:14px;border-radius:8px}
+.skillmap a{color:#126a46;font-weight:700}
+@media(max-width:900px){.demo-grid{grid-template-columns:1fr}}
+@media(max-width:700px){.cases-grid,.method-block ol,.skillmap-grid{grid-template-columns:1fr}.case-primary{grid-column:auto}.case-card{padding:23px 20px}.calc-form,.calc-results{padding:22px 19px}.method-block{padding:22px 19px}}
+
+/* Apresentação reutilizável: IA em primeiro lugar, sem referência a vaga específica. */
+.hero-card strong{font-size:1.50rem;}
+.hero p{max-width:720px;}
+#casos{background:#f8fcf9;}
+#ia{background:#edf8f0;}
+#demo-carbono{background:#f8fcf9;}
+@media(max-width:640px){.hero h1{font-size:clamp(2.35rem,9.2vw,3rem);line-height:1.12}.hero-card{padding:22px}}
+
+/* Estudos de caso integrados: navegação sem arquivos auxiliares. */
+html{scroll-behavior:smooth;}
+section[id], article[id]{scroll-margin-top:85px;}
+#ia-aprofundada{background:#eaf8ef;padding-bottom:25px;}
+#ia-aprofundada .section-head p{max-width:900px;}
+.deep-case{background:#f9fcfa;}
+.deep-case:not(.deep-intro){padding-top:40px;padding-bottom:40px;}
+.deep-case h2{font-family:Georgia,serif;color:#1a5338;font-size:clamp(1.65rem,3vw,2.5rem);margin:12px 0 14px;line-height:1.2;}
+.deep-case h3{font:normal 1.3rem/1.3 Georgia,serif;color:#1a5338;margin:6px 0 12px;}
+.deep-case .eyebrow{display:block;color:#1b7850;font-weight:800;font-size:.75rem;text-transform:uppercase;letter-spacing:.12em;}
+.deep-case .lede{color:#486859;max-width:900px;font-size:1rem;}
+.deep-case .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:22px 0;}
+.deep-case .panel,.deep-case .verdict{border:1px solid #c9e3d2;background:#fff;border-radius:14px;padding:22px;min-width:0;}
+.deep-case .panel p,.deep-case .verdict p{color:#456454;}
+.deep-case .label{display:block;font-size:.73rem;font-weight:800;color:#246d4a;text-transform:uppercase;letter-spacing:.1em;margin-bottom:9px;}
+.deep-case .metric{display:block;font:normal 2.3rem Georgia,serif;color:#176b49;margin-top:11px;}
+.deep-case .notice{background:#e8f7eb;border-left:4px solid #168553;padding:16px 21px;margin:15px 0;border-radius:8px;}
+.deep-case .notice p{margin:0;}
+.deep-case .steps{padding-left:22px;}
+.deep-case .steps li{margin:9px 0;}
+.deep-case .src{font-size:.87rem;color:#4f6659;}
+.deep-case a{color:#0e6947;overflow-wrap:anywhere;}
+.deep-case .formgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;}
+.deep-case .field{display:flex;flex-direction:column;gap:8px;margin-bottom:12px;}
+.deep-case .field label{font-size:.9rem;font-weight:800;color:#24563c;}
+.deep-case textarea{background:white;color:#163a2b;width:100%;min-height:165px;border:1px solid #abcab6;border-radius:9px;font:15px/1.55 Arial,sans-serif;padding:12px;resize:vertical;}
+.deep-case textarea.long{min-height:300px;}
+.deep-case .actions{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0;}
+.deep-case .btn{display:inline-block;background:#186a47;color:#fff;border:1px solid #186a47;border-radius:8px;padding:12px 16px;font:bold .91rem Arial,sans-serif;cursor:pointer;}
+.deep-case .btn.secondary{background:#fff;color:#186a47;}
+.deep-case .btn:hover{filter:brightness(.95);}
+.deep-case #estado-copia{color:#345945;font-size:.88rem;}
+.deep-jump{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0 0;}
+.deep-jump a{display:inline-block;border:1px solid #b6ddc3;border-radius:99px;background:#fff;padding:10px 15px;color:#116743;text-decoration:none;font-weight:700;font-size:.9rem;}
+.deep-jump a:hover{background:#ddf5e5;}
+@media(max-width:750px){.deep-case .grid,.deep-case .formgrid{grid-template-columns:1fr}.deep-case .panel{padding:19px}.deep-case:not(.deep-intro){padding-top:28px;padding-bottom:28px}section[id],article[id]{scroll-margin-top:15px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<a class="skip" href="#conteudo">Ir para o conteúdo</a>
+<header class="site-head">
+<nav aria-label="Navegação principal" class="nav wrap">
+<a class="logo" href="#inicio">MEIRE <span>HELEN</span></a>
+<div class="nav-links"><a href="#casos">IA e automações</a><a href="#ia">Método com IA</a><a href="#ia-aprofundada">Demonstração de IA</a><a href="#demo-carbono">Código ao vivo</a><a href="#projetos">Projetos técnicos</a><a href="#experiencia">Experiência</a><a href="#evidencias">Evidências</a><a href="#contato">Contato</a></div>
+</nav>
+</header>
+<main id="conteudo"><section aria-labelledby="titulo" class="hero" id="inicio">
+<div class="wrap hero-grid">
+<div>
+<div class="eyebrow">PORTFÓLIO PROFISSIONAL · IA APLICADA · TECNOLOGIA · SUSTENTABILIDADE</div>
+<h1 id="titulo">Inteligência artificial aplicada a <em>problemas reais.</em></h1>
+<p>Sou Meire Helen da Silva Reis. Tenho experiência prática, ainda em desenvolvimento, com IA generativa para pesquisa orientada por critérios, elaboração de prompts, tarefas agendadas, conferência de informações e criação de materiais digitais. Combino esse aprendizado com programação, gestão de projetos e atuação socioambiental.</p>
+<div class="actions"><a class="btn primary" href="#casos">Ver aplicações de IA ↗</a><a class="btn ghost" href="#editais">Testar gerador de prompt para editais ↗</a><a class="btn ghost" href="#projetos">Explorar projetos de código ↗</a><a class="btn ghost" href="https://github.com/helensilvameme" rel="noopener noreferrer" target="_blank">GitHub ↗</a></div>
+</div>
+<aside aria-label="Resumo da atuação" class="hero-card"><span class="label">Experiência prática em desenvolvimento</span><strong>IA no cotidiano, com entregas verificáveis</strong><p><b>Uso real de IA:</b> pesquisas estruturadas, comparações de requisitos, automações agendadas e apoio à elaboração de conteúdo e código.</p><div class="rule"></div><p><b>Registros de execução:</b> acompanhamento de oportunidades e conferência de informações em duas planilhas conectadas.</p><div class="rule"></div><p><b>Base complementar:</b> JavaScript, HTML/CSS, formação em sistemas, energia renovável, gestão e projetos sociais.</p></aside>
+</div>
+</section><section aria-labelledby="casos-titulo" class="content cases-section" id="casos">
+<div class="wrap">
+<div class="section-head"><span class="small-label">01 · Inteligência artificial e automações</span><h2 id="casos-titulo">Aplicações de IA que já utilizo</h2><p>Minha experiência é prática e está em evolução. Os casos abaixo distinguem o que foi configurado e executado das competências que ainda estou desenvolvendo; cada exemplo apresenta objetivo, contribuição e limites da evidência.</p></div>
+<div class="cases-grid">
+<article class="case-card case-primary" id="caso-monitoramento-ia">
+<div class="case-kicker"><span>IA APLICADA + AUTOMAÇÕES REAIS</span><span class="case-stage">Monitoramento ativo · verificado em 17/11/2026</span></div>
+<h3>Monitoramento de oportunidades e comparação de critérios com IA</h3>
+<p class="case-summary">Organização de pesquisas recorrentes por bolsas, vagas e passagens com filtros definidos por objetivo, valor máximo e requisitos de elegibilidade.</p>
+<dl class="case-steps"><div><dt>Problema</dt><dd>Acompanhar oportunidades sem repetir manualmente as mesmas buscas e sem receber alertas irrelevantes.</dd></div><div><dt>Minha contribuição</dt><dd>Definição dos critérios, limites, fontes prioritárias e condições para notificar. Utilização de tarefas agendadas do ChatGPT, com pesquisa e síntese por IA.</dd></div><div><dt>Funcionamento comprovado</dt><dd>Em 17/11/2026, duas tarefas tiveram execução concluída: monitoramento de passagens internacionais com teto de R$ 3.000 e busca de bolsas compatíveis com a UFPR. A busca de bolsas registrou que nenhuma novidade atendia aos filtros, evitando um alerta desnecessário.</dd></div><div><dt>Limites</dt><dd>O registro comprova agendamento e execução na plataforma, não passagem comprada, hospedagem reservada, oferta encontrada nem fluxo de n8n. Informações privadas foram omitidas.</dd></div></dl>
+<div class="case-actions"><a href="#ia-aprofundada">Ver estudo de caso e demonstração de editais ↗</a></div>
+</article>
+<article class="case-card case-primary" id="caso-planilhas-ia">
+<div class="case-kicker"><span>INTEGRAÇÃO DE DADOS + VALIDAÇÃO</span><span class="case-stage">Execução registrada · 02/11/2026 · tarefa pausada</span></div>
+<h3>Conferência de pedidos acadêmicos em planilhas conectadas</h3>
+<p class="case-summary">Verificação de respostas de formulário, pedidos e recebimentos para identificar novos lançamentos e divergências, preservando ajustes manuais.</p>
+<dl class="case-steps"><div><dt>Problema</dt><dd>Reduzir o risco de lançamentos duplicados e evitar tratar anexos de comprovantes como pagamento confirmado.</dd></div><div><dt>Minha contribuição</dt><dd>Especificação de regras de conciliação, exceções, verificações e critérios para não sobrescrever informações manualmente revisadas.</dd></div><div><dt>Execução verificada</dt><dd>O registro de 02/11/2026 informa consulta a duas planilhas e comparação de 13 respostas com 22 itens de pedidos e 10 transações. Nenhuma linha foi alterada porque não houve novidade segura para lançar.</dd></div><div><dt>Limites</dt><dd>Trata-se de uso de tarefas e conectores, e não de um fluxo n8n de autoria demonstrada. Os registros operacionais e dados de terceiros não são publicados.</dd></div></dl>
+<div class="case-actions"><a href="#planilhas">Ver método e resultados ↗</a></div>
+</article>
+<article class="case-card case-primary">
+<div class="case-kicker"><span>IA GENERATIVA + DESENVOLVIMENTO WEB</span><span class="case-stage">Site navegável · publicação pendente</span></div>
+<h3>Portfólio orientado por IA: da experiência dispersa a uma entrega digital</h3>
+<p class="case-summary">Como transformar registros de programação, notícias e formação em uma apresentação verificável para recrutamento?</p>
+<dl class="case-steps"><div><dt>Desafio</dt><dd>Organizar informações heterogêneas e evitar descrições vagas ou capacidades não comprovadas.</dd></div><div><dt>Contribuição</dt><dd>Definição dos objetivos, curadoria das experiências, escolhas de identidade visual e revisão das afirmações, com apoio de IA generativa na estruturação do site.</dd></div><div><dt>Entrega observável</dt><dd>Site estático em HTML, CSS e JavaScript, adaptado a celular, com navegação por seções, fontes consultáveis e demonstração interativa.</dd></div></dl>
+<div class="case-actions"><a href="#metodo-ia">Ver processo com IA ↗</a><a href="#evidencias">Examinar evidências ↗</a></div>
+</article>
+<article class="case-card">
+<div class="case-kicker"><span>JAVASCRIPT + SUSTENTABILIDADE</span><span class="case-stage">Exercício com demonstração</span></div>
+<h3>Cálculo exploratório de pegada de carbono</h3>
+<p class="case-summary">Um exercício autoral com funções para estimar emissões ligadas à energia elétrica, transporte e resíduos.</p>
+<dl class="case-steps"><div><dt>Problema</dt><dd>Demonstrar como parâmetros de consumo podem ser convertidos em estimativas numéricas.</dd></div><div><dt>Código existente</dt><dd>Funções JavaScript de cálculo e sugestões condicionais de boas práticas em repositório público.</dd></div><div><dt>Entrega atual</dt><dd>Interface interativa adicionada a este portfólio para testar o exercício, sem alegação de validação metodológica.</dd></div></dl>
+<div class="case-actions"><a href="#demo-carbono">Testar cálculo ↗</a><a href="https://github.com/helensilvameme/carbonfootprint/blob/main/calculadora.js" rel="noopener noreferrer" target="_blank">Ver código original ↗</a></div>
+</article>
+<article class="case-card">
+<div class="case-kicker"><span>SITE PÚBLICO + PLANEJAMENTO</span><span class="case-stage">Página publicada · 2026</span></div>
+<h3>Semana Acadêmica Integrada das Engenharias — UFPR/CEM</h3>
+<p class="case-summary">Criação e articulação de um evento interdisciplinar, com presença digital e comunicação de programação e inscrições.</p>
+<dl class="case-steps"><div><dt>Problema</dt><dd>Centralizar programação, parceiros e informações para estudantes e comunidade.</dd></div><div><dt>Contribuição</dt><dd>Idealização e organização do evento, articulação institucional e disponibilização de página web ligada à iniciativa.</dd></div><div><dt>Evidência</dt><dd>Site público, repositório do projeto e reportagens que citam nominalmente sua atuação.</dd></div></dl>
+<div class="case-actions"><a href="https://helensilvameme.github.io/semana-academica-ufpr-cem/" rel="noopener noreferrer" target="_blank">Acessar site publicado ↗</a><a href="https://github.com/helensilvameme/semana-academica-ufpr-cem" rel="noopener noreferrer" target="_blank">Ver código ↗</a><a href="https://www.paranapraia.com.br/index.php/2026/08/03/ufpr-promove-semana-academica-das-engenharias-com-palestras-minicursos-e-visita-tecnica-no-litoral/" rel="noopener noreferrer" target="_blank">Comprovação externa ↗</a></div>
+</article>
+</div>
+</div>
+</section><section aria-labelledby="deep-heading" class="content deep-case deep-intro" id="ia-aprofundada"><div class="wrap"><div class="section-head"><span class="small-label">Demonstrações acessíveis na própria página</span><h2 id="deep-heading">IA na prática: estudos de caso e análise de editais</h2><p>Detalhamento de monitoramentos, conferência de planilhas e uma ferramenta que prepara prompts para análise documental. Todas as seções abaixo fazem parte deste mesmo arquivo HTML, inclusive quando aberto sem internet.</p><nav aria-label="Navegar pelos estudos de caso" class="deep-jump"><a href="#monitoramentos">Monitoramento de oportunidades</a><a href="#planilhas">Conferência de planilhas</a><a href="#editais">Testar gerador de prompts</a></nav></div></div></section><section class="content deep-case" id="monitoramentos"><div class="wrap"><span class="eyebrow">Caso 1 · Monitoramento recorrente</span><h2>Oportunidades relevantes, sem alertas desnecessários</h2><p class="lede">Uso tarefas do ChatGPT para buscar vagas, bolsas e tarifas conforme critérios explícitos. A automação executa verificações programadas; o envio de alerta depende de encontrar uma opção que cumpra as condições.</p>
+<div class="grid"><article class="panel"><span class="label">Pesquisa por passagens</span><h3>Europa até R$ 3.000</h3><p>Monitoramento de passagens de ida e volta para França, Espanha ou Portugal em 2027, com pesquisa de alternativas e links confiáveis.</p><span class="label">Estado verificado</span><p><strong>Ativo.</strong> Execução concluída em <strong>17/11/2026, às 07h16 (Brasília)</strong>. Não há comprovação, nesse registro, de oferta encontrada ou alerta entregue.</p></article>
+<article class="panel"><span class="label">Bolsas e editais</span><h3>Elegibilidade antes do alerta</h3><p>Pesquisa de bolsas e apoios compatíveis com a UFPR, incluindo exigências, prazos, documentação e fontes institucionais.</p><span class="label">Estado verificado</span><p><strong>Ativo.</strong> Execução concluída em <strong>17/11/2026, às 09h05 (Brasília)</strong>. O relatório concluiu não haver novidade elegível e não recomendou alerta.</p></article></div>
+<div class="notice"><p><strong>Por que isso importa?</strong> A filtragem por preço, elegibilidade, data e confiabilidade da fonte reduz avisos irrelevantes. <strong>Não há medição de horas poupadas</strong>, portanto não atribuo economia numérica a esses fluxos.</p></div>
+<p class="src">Fonte interna: configurações e registros de execução das tarefas agendadas do ChatGPT, consultados em 17/11/2026. O texto do relatório de bolsas foi resumido e dados privados foram omitidos.</p></div></section><section class="content deep-case" id="planilhas"><div class="wrap"><span class="eyebrow">Caso 2 · Integração e conferência de dados</span><h2>Conciliação de pedidos com duas planilhas conectadas</h2><p class="lede">Foi configurada uma tarefa para ler respostas de formulário e uma planilha de controle, evitando duplicidades e preservando correções manuais. O monitoramento está pausado; a última execução consultada é de 02/11/2026.</p>
+<div class="grid"><div class="panel"><span class="label">Escopo da última execução</span><div class="metric">13</div><p>Respostas de formulário conferidas</p><div class="metric">22</div><p>Itens de pedidos examinados</p><div class="metric">10</div><p>Transações de recebimento confrontadas</p></div>
+<div class="panel"><span class="label">Regras especificadas</span><ol class="steps"><li>Conferir novos pedidos e alterações antes de lançar.</li><li>Não duplicar entradas nem sobrescrever correções manuais.</li><li>Não confirmar pagamento com base apenas em um comprovante anexado.</li><li>Sinalizar conflitos e exigir revisão humana.</li></ol><p><strong>Resultado registrado:</strong> nenhuma novidade segura para atualização e nenhuma linha modificada nessa execução.</p></div></div>
+<p class="src">Registro interno de execução: 02/11/2026, às 09h45 (Brasília). As planilhas contêm dados de terceiros; endereços, nomes e informações financeiras individuais não são divulgados. A execução registrada não equivale a desenvolvimento de um fluxo n8n.</p></div></section><section class="content deep-case" id="editais"><div class="wrap"><span class="eyebrow">Demonstração reutilizável · Prompt estruturado</span><h2>Análise de editais e oportunidades: preparar uma consulta à IA</h2><p class="lede">Esta ferramenta local <strong>não executa um modelo de IA</strong>: ela prepara um prompt estruturado para comparação de requisitos, que pode ser utilizado em um modelo de linguagem. A demonstração é aplicável a editais de bolsa, processos seletivos, cursos, estágios e programas de apoio.</p>
+<div class="grid"><div class="panel"><span class="label">Caso real de monitoramento documental</span><h3>Editais e oportunidades da UFPR</h3><p>Uma tarefa de IA configurada com filtros de elegibilidade consultou fontes institucionais e verificou prazos e requisitos de oportunidades de bolsas. No registro de 17/11/2026, concluiu que não havia novidade compatível que justificasse alerta.</p><p><strong>Aprendizado aplicado:</strong> manter separadas as informações extraídas da fonte, as condições do perfil e as pendências que exigem confirmação humana.</p><p class="src">Fonte institucional consultada: <a href="https://www.cem.ufpr.br/portal/oportunidades/" rel="noopener noreferrer" target="_blank">CEM/UFPR — oportunidades ↗</a>. Registro interno de execução: 17/11/2026.</p></div>
+<div class="panel"><span class="label">Método</span><ol class="steps"><li>Identificar e citar requisitos no documento original.</li><li>Comparar separadamente os requisitos ao perfil informado.</li><li>Classificar cada item em <strong>atendido, não atendido ou não comprovado</strong>.</li><li>Informar dados ausentes, possíveis interpretações e data da fonte.</li><li>Revisar a saída da IA antes de utilizá-la.</li></ol><p class="src">O exemplo não determina aprovação ou elegibilidade integral.</p></div></div>
+<form class="panel" id="form-edital" novalidate=""><h3>Gerador de prompt para análise de edital</h3><div class="formgrid"><div class="field"><label for="texto-edital">Trecho do edital ou oportunidade</label><textarea id="texto-edital" placeholder="Cole o texto de um edital público.">Exemplo fictício: seleção para bolsa de extensão. Requisitos: matrícula ativa na graduação, disponibilidade de 10 horas semanais e envio de histórico escolar. Inscrições até 30/11/2026. Este texto é apenas uma simulação para testar o gerador.</textarea></div><div class="field"><label for="perfil">Perfil que será comparado</label><textarea id="perfil" placeholder="Descreva somente informações que deseja compartilhar.">Perfil fictício para demonstração: estudante de graduação com matrícula ativa comprovada. Disponibilidade semanal: não informada. Histórico escolar: ainda não apresentado.</textarea></div></div><div class="actions"><button class="btn" id="gerar-prompt" type="submit">Gerar prompt estruturado</button><button class="btn secondary" id="copiar" type="button">Copiar prompt</button></div><div class="field"><label for="resultado-prompt">Prompt gerado para utilização em um modelo de IA</label><textarea aria-live="polite" class="long" id="resultado-prompt" placeholder="O prompt aparecerá aqui após você clicar em “Gerar prompt estruturado”." readonly=""></textarea></div><p id="estado-copia" role="status">Pronto para gerar. Clique em “Gerar prompt estruturado” para produzir um texto que poderá copiar e utilizar em uma IA. Nenhum documento é enviado por este site.</p><p class="src">Caso o visualizador do aplicativo não execute JavaScript, abra este arquivo HTML no navegador Chrome ou Firefox. Esta ferramenta monta um prompt, mas não executa uma análise de IA.</p><noscript><p class="src">JavaScript está desativado. Ative-o em seu navegador para utilizar o gerador.</p></noscript></form>
+</div></section><section aria-labelledby="ia-titulo" class="content alt" id="ia">
+<div class="wrap">
+<div class="section-head"><span class="small-label">02 · Ferramentas, métodos e limites</span><h2 id="ia-titulo">Como trabalho com IA generativa</h2><p>Uso modelos e tarefas assistidas para organizar informações, definir critérios, revisar respostas e transformar necessidades em entregas. Tenho experiência aplicada inicial, não atuação especializada em treinamento de modelos ou orquestração avançada de agentes.</p></div><div class="method-block" id="metodo-ia"><div><span class="small-label">Caso documentado: este site</span><h3>IA aplicada a uma entrega real</h3><p>O uso de IA foi parte do processo de construção deste próprio portfólio, sem alegar automação de processos empresariais ou orquestração de agentes.</p></div><ol><li><strong>Briefing humano:</strong> objetivo de candidatura, áreas de interesse, experiências e preferência por identidade visual verde-clara.</li><li><strong>Levantamento:</strong> seleção de repositórios, identificação de evidências públicas e organização das informações em estudos de caso.</li><li><strong>Produção assistida:</strong> apoio de IA generativa para estruturar HTML, CSS, textos, navegação e a interface demonstrativa.</li><li><strong>Verificação:</strong> revisão de links, separação entre fatos e experimentos, testes de responsividade e indicação explícita de limitações.</li></ol><p class="method-note">Entrega: um site estático navegável e arquivos preparados para publicação. A publicação deste portfólio em um novo repositório GitHub ainda está pendente.</p></div>
+<div class="ai-box">
+<div class="ai-panel"><span class="eyebrow">Uso prático</span><h3>Da pergunta ao resultado: clareza, iteração e avaliação</h3><ul><li><strong>Este portfólio:</strong> site HTML/CSS criado com apoio de IA a partir de um briefing próprio, com curadoria de conteúdo, vinculação de fontes e validação de responsividade para apresentação de projetos.</li><li><strong>ChatGPT, Claude e Gemini:</strong> apoio à redação técnica, organização de dados, pesquisa e desenvolvimento de ideias.</li><li><strong>Codex:</strong> apoio a tarefas de programação, elaboração de arquivos e experimentações técnicas.</li><li><strong>Prompts estruturados:</strong> definição de contexto, critérios, restrições e formato de saída.</li><li><strong>n8n e integrações:</strong> exploração inicial de fluxos e possibilidades de automação.</li></ul></div>
+<aside class="ai-note"><h3>Compromisso com a precisão</h3><p>Distingo ferramentas utilizadas, protótipos explorados e soluções efetivamente implementadas.</p><p><strong>Não apresento</strong> a exploração do n8n como automações de produção concluídas, nem o uso individual de ferramentas como orquestração avançada de agentes.</p><p>Tenho interesse em aprofundar integração de sistemas, avaliação de soluções e construção de produtos baseados em IA.</p><p><strong>Casos estudados:</strong> organização de documentos técnicos e planilhas, apoio a tarefas com programação, exploração de fluxos via n8n/Google Apps Script e estudos de análise espacial com Python/QGIS. A implantação final desses fluxos não foi confirmada.</p></aside>
+</div>
+</div>
+</section><section aria-labelledby="demo-titulo" class="content alt demo-section" id="demo-carbono">
+<div class="wrap">
+<div class="section-head"><span class="small-label">03 · Projeto de programação demonstrável</span><h2 id="demo-titulo">Demonstração funcional em JavaScript</h2><p>Esta interface é uma adaptação do exercício de <a href="https://github.com/helensilvameme/carbonfootprint" rel="noopener noreferrer" target="_blank">pegada de carbono publicado no GitHub</a>. Insira valores e veja o cálculo no navegador, sem necessidade de cadastro.</p></div>
+<div class="demo-grid">
+<form class="calc-form" id="calc-carbono">
+<label for="energia">Energia elétrica consumida <small>(kWh/mês)</small></label>
+<input id="energia" inputmode="decimal" max="100000" min="0" name="energia" required="" step="any" type="number" value="150"/>
+<label for="distancia">Distância percorrida <small>(km/mês)</small></label>
+<input id="distancia" inputmode="decimal" max="100000" min="0" name="distancia" required="" step="any" type="number" value="200"/>
+<label for="transporte">Meio de transporte</label>
+<select id="transporte" name="transporte"><option value="carro">Carro</option><option value="onibus">Ônibus</option><option value="bicicleta">Bicicleta</option><option value="aPe">A pé</option></select>
+<label for="residuos">Resíduos <small>(kg/mês)</small></label>
+<input id="residuos" inputmode="decimal" max="100000" min="0" name="residuos" required="" step="any" type="number" value="30"/>
+<button class="btn primary calc-btn" type="submit">Calcular estimativa</button>
+</form>
+<div aria-atomic="true" aria-live="polite" class="calc-results" id="resultado-carbono">
+<span class="small-label">Resultado do exercício</span>
+<p class="result-value"><strong id="total-carbono">—</strong> <span>kg de CO₂/mês</span></p>
+<p id="resultado-explicacao">Preencha os campos e selecione calcular para visualizar os resultados.</p>
+<div class="breakdown"><div><span>Energia</span><strong id="valor-energia">—</strong></div><div><span>Transporte</span><strong id="valor-transporte">—</strong></div><div><span>Resíduos</span><strong id="valor-residuos">—</strong></div></div>
+<p class="calc-note"><strong>Atenção metodológica:</strong> os fatores de emissão (0,084 kg/kWh para energia; 0,21 e 0,11 kg/km para carro e ônibus; 0,45 kg/kg para resíduos) foram mantidos do exercício original. Não foram validados para inventários de GEE, relatórios ambientais ou decisões técnicas. O valor é apenas demonstrativo.</p>
+</div>
+</div>
+<p class="demo-footnote">O código original calcula valores em JavaScript. A interface para testá-los foi desenvolvida nesta revisão do portfólio com apoio de IA. A demonstração não utiliza um modelo de IA para estimar emissões.</p>
+</div>
+</section><section aria-labelledby="projetos-titulo" class="content alt" id="projetos">
+<div class="wrap">
+<div class="section-head"><span class="small-label">04 · Programação e formação</span><h2 id="projetos-titulo">Projetos técnicos e experiências formativas</h2><p>Código público, protótipos e programas de formação complementam minhas aplicações com IA. Projetos de estudo são identificados como tal, com links para conferência.</p></div>
+<div class="grid"><article class="card"><span class="number">CÓDIGO + FORMAÇÃO · 2022</span><h3>Women Can Code — John Deere</h3><p>Formação em programação, com exercícios públicos: um algoritmo em JavaScript lê números, lista divisores e identifica números primos. O repositório também reúne notebooks de atividades.</p><div class="pillset"><span class="pill">JavaScript</span><span class="pill">Lógica de programação</span><span class="pill">Diversidade</span></div><div class="card-links"><a class="more" href="https://github.com/helensilvameme/WomenCanCode/blob/main/app.js" rel="noopener noreferrer" target="_blank">Abrir algoritmo JavaScript ↗</a><a class="more" href="https://github.com/helensilvameme/WomenCanCode" rel="noopener noreferrer" target="_blank">Ver exercícios no GitHub ↗</a><a class="more" href="https://pt.linkedin.com/posts/bianca-linhares-4b989122_gratid%C3%A3o-mulheresnatecnologia-johndeereemployee-activity-6974469103570833408-Yrdd" rel="noopener noreferrer" target="_blank">Ver registro de participação ↗</a></div></article><article class="card"><span class="number">TECNOLOGIA + PROJETO · 2024–2025</span><h3>Talento Tech Paraná</h3><p>Participação no programa de formação em tecnologia. Em publicação própria, registrei encontro presencial sobre posicionamento profissional, Canvas Model Business e preparação de pitches.</p><div class="pillset"><span class="pill">Programação</span><span class="pill">Inovação</span><span class="pill">Modelagem de ideias</span></div><div class="card-links"><a class="more" href="https://pt.linkedin.com/posts/meire-helen-silva-reis-85a04bb3_talentotech-canvasmodel-linkedinprofissional-activity-7316824182397280256-7kTG" rel="noopener noreferrer" target="_blank">Ver meu relato público ↗</a><a class="more" href="https://www.uepg.br/primeiro-seminario-talento/" rel="noopener noreferrer" target="_blank">Conhecer programa na UEPG ↗</a></div></article><article class="card"><span class="number">PESQUISA + IMPACTO · 2025</span><h3>Conecta Caiçara — UFPR/CNPq</h3><p>Atuação como bolsista de pesquisa e extensão vinculada a tecnologia, inclusão de meninas e mulheres, turismo sustentável e valorização do litoral paranaense. Minha participação em entrevista é citada na Revista Tecnologia em Pauta.</p><div class="pillset"><span class="pill">Pesquisa</span><span class="pill">STEM</span><span class="pill">Sustentabilidade</span></div><div class="card-links"><a class="more" href="https://pt.linkedin.com/posts/revistatecnologiaempauta_tecnologia-em-pauta-34%C2%AA-edi%C3%A7%C3%A3o-activity-7307845619165884418-1U-b" rel="noopener noreferrer" target="_blank">Ver menção nominal na revista ↗</a><a class="more" href="https://conectacaicara.my.canva.site/" rel="noopener noreferrer" target="_blank">Conhecer projeto ↗</a></div></article><article class="card"><span class="number">PROTÓTIPOS · FLUTTER</span><h3>Aplicativos móveis e interfaces</h3><p>Repositórios de estudo com estruturas Flutter/Dart, incluindo uma calculadora e um jogo da velha. Apresentados como exercícios e protótipos, não como aplicativos publicados comercialmente.</p><div class="pillset"><span class="pill">Flutter/Dart</span><span class="pill">Apps</span><span class="pill">Protótipos</span></div><div class="card-links"><a class="more" href="https://github.com/helensilvameme/calculadora" rel="noopener noreferrer" target="_blank">Repositório calculadora ↗</a><a class="more" href="https://github.com/helensilvameme/jogo-da-velha" rel="noopener noreferrer" target="_blank">Repositório jogo da velha ↗</a></div></article>
+<article class="card"><span class="number">PROJETO 02 · CÓDIGO</span><h3>Estudos em pegada de carbono</h3><p>Repositório autoral de estudo com scripts JavaScript para cálculos relativos à pegada de carbono. Evidência de programação vinculada ao tema ambiental; não há alegação de implantação profissional.</p><div class="pillset"><span class="pill">JavaScript</span><span class="pill">Sustentabilidade</span><span class="pill">Prototipagem</span></div><a class="more" href="https://github.com/helensilvameme/carbonfootprint" rel="noopener noreferrer" target="_blank">Consultar código no GitHub ↗</a></article>
+<article class="card"><span class="number">PROJETO 03 · DADOS</span><h3>Exploração de dashboards em Streamlit</h3><p>Exercício de aprendizagem em Python/Streamlit baseado em um template público de painel econômico; apresentado como estudo adaptado, não como produto original ou implantação.</p><div class="pillset"><span class="pill">Python</span><span class="pill">Streamlit</span><span class="pill">Visualização</span></div><a class="more" href="https://github.com/helensilvameme/gdp-dashboard" rel="noopener noreferrer" target="_blank">Consultar repositório ↗</a></article>
+<article class="card"><span class="number">PROJETO 04 · IMPACTO SOCIAL</span><h3>Litro de Luz</h3><p>Atuação voluntária entre 2018 e 2020 em iniciativas de iluminação sustentável e impacto comunitário, com atividades de acompanhamento e mensuração de resultados.</p><div class="pillset"><span class="pill">Impacto social</span><span class="pill">Energia limpa</span><span class="pill">Voluntariado</span></div><a class="more" href="#lideranca">Conhecer atuação ↗</a></article>
+<article class="card"><span class="number">PROJETO 05 · ARTICULAÇÃO</span><h3>Festival da Primavera</h3><p>Participação na organização de evento comunitário e universitário em Pontal do Paraná, com apoio à articulação institucional, parceiros e atividades públicas.</p><div class="pillset"><span class="pill">Planejamento</span><span class="pill">Parcerias</span><span class="pill">Comunidade</span></div><a class="more" href="#lideranca">Ver experiência ↗</a></article>
+<article class="card"><span class="number">PROJETO 06 · APRENDIZAGEM CONTÍNUA</span><h3>Experimentos com HTML e aplicações</h3><p>Exercícios e repositórios pessoais de desenvolvimento web, programação e interfaces digitais, incluindo projetos publicados para estudo.</p><div class="pillset"><span class="pill">HTML/CSS</span><span class="pill">GitHub</span><span class="pill">Desenvolvimento</span></div><a class="more" href="https://github.com/helensilvameme?tab=repositories" rel="noopener noreferrer" target="_blank">Explorar projetos ↗</a></article>
+</div><div class="skillmap"><h3>Competência → evidência consultável</h3><div class="skillmap-grid"><p><strong>JavaScript e lógica</strong><br/><a href="https://github.com/helensilvameme/WomenCanCode/blob/main/app.js" rel="noopener noreferrer" target="_blank">Algoritmo de divisores e números primos ↗</a></p><p><strong>Cálculos aplicados</strong><br/><a href="https://github.com/helensilvameme/carbonfootprint/blob/main/calculadora.js" rel="noopener noreferrer" target="_blank">Funções de pegada de carbono ↗</a></p><p><strong>HTML e CSS</strong><br/><a href="https://github.com/helensilvameme/semana-academica-ufpr-cem" rel="noopener noreferrer" target="_blank">Site da Semana Acadêmica ↗</a></p><p><strong>IA generativa aplicada</strong><br/><a href="#metodo-ia">Processo de construção deste portfólio ↗</a></p></div></div>
+</div>
+</section><section aria-labelledby="sobre-titulo" class="content" id="sobre">
+<div class="wrap">
+<div class="section-head"><span class="small-label">05 · Perfil interdisciplinar</span><h2 id="sobre-titulo">IA, tecnologia e experiência em contextos reais</h2></div>
+<div class="lead">
+<div>
+<p>Minha trajetória reúne <strong>gestão pública ambiental, desenvolvimento de sistemas, energia solar e mobilização de equipes</strong>. Na UNADIM/IAT, atuo com análises técnicas, documentação e processos ligados ao território da Ilha do Mel, no Paraná.</p>
+<p>Também participei de iniciativas comunitárias e de extensão, da organização de eventos acadêmicos e de projetos de tecnologia. Tenho interesse em aplicar IA para tornar processos mais claros, eficientes e acessíveis.</p>
+<p>Busco oportunidades em que tecnologia e análise estratégica possam gerar valor para pessoas, organizações e meio ambiente.</p>
+<p>Fui bolsista no <strong>Conecta Caiçara</strong>, projeto de ciência, inovação e empoderamento feminino ligado à UFPR, e participei do <strong>Women Can Code</strong> (John Deere) e do <strong>Talento Tech</strong> (UEPG/Governo do Paraná). Essas experiências conectam programação, formação de pessoas e desafios sociais.</p></div>
+<div class="highlight-list">
+<div class="highlight"><b>UFPR · Engenharia Ambiental e Sanitária</b>Conclusão prevista: julho de 2028.</div>
+<div class="highlight"><b>Formação técnica dupla · SENAI</b>Desenvolvimento de Sistemas e Sistemas de Energia Renovável.</div>
+<div class="highlight"><b>Vivência prática</b>Setor público, energia fotovoltaica, organização de projetos e desenvolvimento web.</div>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="exp-titulo" class="content" id="experiencia">
+<div class="wrap">
+<div class="section-head"><span class="small-label">06 · Experiência profissional</span><h2 id="exp-titulo">Da energia renovável à gestão socioambiental</h2><p>Experiências em contextos técnicos e multidisciplinares.</p></div>
+<div class="timeline">
+<article class="job"><span class="period">2025 — atual</span><h3>Assessora</h3><div class="where">UNADIM · Instituto Água e Terra (IAT)</div><p>Apoio a análises técnicas e administrativas, organização documental, orientação a interessados e acompanhamento de processos relacionados à Ilha do Mel.</p></article>
+<article class="job"><span class="period">2024 — 2025</span><h3>Estágio</h3><div class="where">Instituto Água e Terra (IAT)</div><p>Atendimento, instrução de processos, documentação técnica e apoio às atividades institucionais em território de interesse ambiental.</p></article>
+<article class="job"><span class="period">2023</span><h3>Eletricista de instalações fotovoltaicas</h3><div class="where">RenovaGreen</div><p>Atuação em instalação de sistemas solares fotovoltaicos, aproximando conhecimentos técnicos de soluções para transição energética.</p></article>
+<article class="job"><span class="period">2022</span><h3>Pré-vendas e suporte em energia solar</h3><div class="where">i9Solar</div><p>Atendimento, monitoramento remoto e suporte a clientes de soluções de geração fotovoltaica.</p></article>
+</div>
+</div>
+</section>
+<section aria-labelledby="lider-titulo" class="content" id="lideranca">
+<div class="wrap">
+<div class="section-head"><span class="small-label">07 · Liderança e impacto</span><h2 id="lider-titulo">Liderança, colaboração e impacto social</h2></div>
+<div class="two">
+<article class="feature"><h3>Representação estudantil</h3><p>Presidência de Centro Acadêmico e atuação em representação universitária, com experiência em organização, articulação e mobilização de estudantes.</p><p><a href="https://www.paranapraia.com.br/index.php/2026/08/03/ufpr-promove-semana-academica-das-engenharias-com-palestras-minicursos-e-visita-tecnica-no-litoral/" rel="noopener noreferrer" target="_blank">Fonte pública: presidência do Centro Acadêmico ↗</a></p></article>
+<article class="feature"><h3>CREA Jr-PR · CAE Curitiba</h3><p>Eleita coordenadora suplente da CAE Curitiba para 2027, com interesse em integração profissional, parcerias e oportunidades de formação.</p><p><a href="https://www.crea-pr.org.br/ws/2026/11/governanca-cooperativa-reune-liderancas-da-regional-curitiba-e-destaca-acoes-estrategicas-do-crea-pr/" rel="noopener noreferrer" target="_blank">Publicação do CREA-PR confirma eleição ↗</a></p></article>
+<article class="feature"><h3>Eventos universitários e comunitários</h3><p>Atuação na organização da Semana Acadêmica Integrada das Engenharias e do Festival da Primavera em 2026, conectando estudantes, instituições e comunidade.</p><p><a href="https://www.senge-pr.org.br/2026/09/18/presidenta-do-senge-pr-palestra-na-semana-academica-integrada-das-engenharias-da-ufpr-centro-de-estudos-do-mar/" rel="noopener noreferrer" target="_blank">Registro de organização no SENGE-PR ↗</a></p></article>
+<article class="feature"><h3>Voluntariado socioambiental</h3><p>Participação no Litro de Luz (2018–2020), ligada à promoção de soluções sustentáveis e ao acompanhamento de impacto em comunidades.</p></article>
+</div>
+</div>
+</section>
+<section aria-labelledby="form-titulo" class="content alt" id="formacao">
+<div class="wrap">
+<div class="section-head"><span class="small-label">08 · Formação</span><h2 id="form-titulo">Conhecimentos complementares</h2><p>A combinação entre engenharia, programação e energia renovável orienta minha abordagem interdisciplinar.</p></div>
+<div class="education"><div><strong>UFPR</strong> · Engenharia Ambiental e Sanitária (graduação em andamento; previsão: jul. 2028)</div><div><strong>SENAI</strong> · Técnico em Desenvolvimento de Sistemas</div><div><strong>SENAI</strong> · Técnico em Sistemas de Energia Renovável</div><div><strong>Women Can Code · John Deere</strong> · Formação em tecnologia e programação (2022)</div><div><strong>Talento Tech · UEPG/Governo do Paraná</strong> · Programa de formação tecnológica (2024–2025)</div><div><strong>Pesquisa e extensão</strong> · Conecta Caiçara (UFPR/CNPq), participação como bolsista e entrevistada</div></div>
+<h3 style="margin-top:32px;font-family:Georgia,serif;font-size:1.5rem">Competências e ferramentas</h3>
+<div class="skills"><span>ChatGPT (pesquisa e automações agendadas)</span><span>Google Sheets (conectores e conciliação)</span><span>Claude</span><span>Gemini</span><span>Codex</span><span>Prompting estruturado</span><span>JavaScript</span><span>HTML e CSS</span><span>Python (estudos)</span><span>Flutter/Dart (protótipos)</span><span>QGIS</span><span>Git e GitHub</span><span>n8n (exploração inicial)</span><span>Planilhas e documentação</span><span>Gestão de processos</span><span>Projetos e parcerias</span></div>
+</div>
+</section>
+</main>
+<section aria-labelledby="evidencias-titulo" class="content" id="evidencias"><div class="wrap"><div class="section-head"><span class="small-label">09 · Fontes e evidências</span><h2 id="evidencias-titulo">Evidências e registros públicos</h2><p>Links que identificam nominalmente minha atuação ou permitem consultar materiais publicados na minha conta GitHub. Os registros institucionais sobre programas ajudam a contextualizar atividades, mas não substituem declarações individuais.</p></div><div class="evidence-grid"><article class="proof"><small>2026 · CREA-PR</small><h3>Eleição para a CAE Curitiba</h3><p>Notícia oficial identifica Meire Helen da Silva Reis como coordenadora suplente eleita para 2027.</p><a href="https://www.crea-pr.org.br/ws/2026/11/governanca-cooperativa-reune-liderancas-da-regional-curitiba-e-destaca-acoes-estrategicas-do-crea-pr/" rel="noopener noreferrer" target="_blank">Ler fonte oficial ↗</a></article><article class="proof"><small>2026 · Imprensa local</small><h3>Idealização e presidência acadêmica</h3><p>Reportagem identifica Meire como idealizadora da Semana Acadêmica e presidenta do Centro Acadêmico de Engenharia Ambiental e Sanitária.</p><a href="https://www.paranapraia.com.br/index.php/2026/08/03/ufpr-promove-semana-academica-das-engenharias-com-palestras-minicursos-e-visita-tecnica-no-litoral/" rel="noopener noreferrer" target="_blank">Ler reportagem ↗</a></article><article class="proof"><small>2026 · SENGE-PR</small><h3>Organização da Semana Acadêmica</h3><p>Sindicato profissional menciona nominalmente sua participação na equipe organizadora da Semana Acadêmica da UFPR/CEM.</p><a href="https://www.senge-pr.org.br/2026/09/18/presidenta-do-senge-pr-palestra-na-semana-academica-integrada-das-engenharias-da-ufpr-centro-de-estudos-do-mar/" rel="noopener noreferrer" target="_blank">Ler publicação ↗</a></article><article class="proof"><small>2025 · Revista UFPR</small><h3>Conecta Caiçara e pesquisa</h3><p>A 34ª edição de Tecnologia em Pauta apresenta Meire e Laura Martinson Vaz como bolsistas entrevistadas do Conecta Caiçara.</p><a href="https://pt.linkedin.com/posts/revistatecnologiaempauta_tecnologia-em-pauta-34%C2%AA-edi%C3%A7%C3%A3o-activity-7307845619165884418-1U-b" rel="noopener noreferrer" target="_blank">Ver menção nominal ↗</a></article><article class="proof"><small>2025 · Publicação autoral</small><h3>Talento Tech e inovação</h3><p>Relato público de Meire sobre participação em encontro do Talento Tech, apresentação de projetos e Canvas Model Business.</p><a href="https://pt.linkedin.com/posts/meire-helen-silva-reis-85a04bb3_talentotech-canvasmodel-linkedinprofissional-activity-7316824182397280256-7kTG" rel="noopener noreferrer" target="_blank">Ver publicação ↗</a></article><article class="proof"><small>2022 · John Deere / LinkedIn</small><h3>Women Can Code</h3><p>Publicação sobre o programa contém manifestação pública de Meire em resposta à equipe, além do repositório de exercícios.</p><a href="https://pt.linkedin.com/posts/bianca-linhares-4b989122_gratid%C3%A3o-mulheresnatecnologia-johndeereemployee-activity-6974469103570833408-Yrdd" rel="noopener noreferrer" target="_blank">Ver registro ↗</a></article><article class="proof"><small>2026 · UFPR</small><h3>Representação discente do colegiado</h3><p>Página institucional do curso lista Meire Helen da Silva Reis entre os representantes discentes.</p><a href="https://www.cem.ufpr.br/portal/ambientalsanitaria/colegiado-do-curso/" rel="noopener noreferrer" target="_blank">Consultar página institucional ↗</a></article><article class="proof"><small>2022–2026 · GitHub</small><h3>Código e protótipos públicos</h3><p>A conta vinculada reúne estudos em JavaScript, Flutter/Dart, dashboards e um site da Semana Acadêmica.</p><a href="https://github.com/helensilvameme" rel="noopener noreferrer" target="_blank">Explorar repositórios ↗</a></article></div><div class="distinction"><p><strong>Critério de transparência:</strong> projetos experimentais, exercícios de programação e ferramentas de IA utilizadas no cotidiano não são apresentados como sistemas implantados em produção. Projetos de terceiros e notícias institucionais são identificados conforme sua origem.</p></div></div></section>
+<footer class="footer" id="contato">
+<div class="wrap">
+<div class="foot-grid">
+<div><span class="eyebrow">Vamos construir soluções?</span><h2>Tecnologia, pessoas e futuro sustentável.</h2><p>Interesse em estágio, projetos, pesquisa e oportunidades profissionais em tecnologia, IA aplicada, análise de dados, planejamento, sustentabilidade e impacto social.</p></div>
+<div class="contact"><a href="mailto:contatomeirehellen@gmail.com">contatomeirehellen@gmail.com ↗</a><a href="https://www.linkedin.com/in/meire-helen-silva-reis-85a04bb3/" rel="noopener noreferrer" target="_blank">LinkedIn profissional ↗</a><a href="https://github.com/helensilvameme" rel="noopener noreferrer" target="_blank">GitHub · @helensilvameme ↗</a></div>
+</div>
+<div class="fine">© 2026 Meire Helen da Silva Reis · Portfólio profissional multidisciplinar · Revisão: novembro de 2026. Projetos de estudo e demonstrações estão identificados.</div>
+</div>
+</footer>
+<script>
+(function(){
+ const form=document.getElementById('calc-carbono');
+ if(!form) return;
+ const pt=new Intl.NumberFormat('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2});
+ function render(event){
+   if(event) event.preventDefault();
+   const energia=Number(document.getElementById('energia').value);
+   const distancia=Number(document.getElementById('distancia').value);
+   const residuos=Number(document.getElementById('residuos').value);
+   const transporte=document.getElementById('transporte').value;
+   if([energia,distancia,residuos].some(v=>!Number.isFinite(v)||v<0||v>100000)){
+     document.getElementById('resultado-explicacao').textContent='Informe números válidos e não negativos nos três campos.';
+     return;
+   }
+   // Constantes históricas do exercício original; não são fatores oficialmente validados.
+   const fatores={carro:.21,onibus:.11,bicicleta:0,aPe:0};
+   const e=energia*.084,t=distancia*(fatores[transporte]??0),r=residuos*.45;
+   const total=e+t+r;
+   document.getElementById('total-carbono').textContent=pt.format(total);
+   document.getElementById('valor-energia').textContent=pt.format(e)+' kg CO₂';
+   document.getElementById('valor-transporte').textContent=pt.format(t)+' kg CO₂';
+   document.getElementById('valor-residuos').textContent=pt.format(r)+' kg CO₂';
+   document.getElementById('resultado-explicacao').textContent='Soma demonstrativa: energia + transporte + resíduos. Não representa inventário real de emissões.';
+ }
+ form.addEventListener('submit',render);
+ render();
+})();
+</script><script>
+(function(){
+'use strict';
+const form=document.getElementById('form-edital'),out=document.getElementById('resultado-prompt'),status=document.getElementById('estado-copia'),button=document.getElementById('gerar-prompt');
+const generate=()=>{
+  const source=document.getElementById('texto-edital').value.trim();
+  const profile=document.getElementById('perfil').value.trim();
+  if(!source || !profile){out.value='';status.textContent='Preencha o trecho do edital e o perfil antes de gerar.';button.textContent='Gerar prompt estruturado';return false;}
+  out.value=`Atue como analista documental. Sua tarefa é comparar requisitos de um edital com um perfil informado. Não invente informações, prazos, documentos ou conclusões.\n\nFONTE FORNECIDA (verifique datas e link oficial antes de concluir):\n${source}\n\nPERFIL FORNECIDO:\n${profile}\n\nREGRAS OBRIGATÓRIAS:\n1. Extraia os requisitos individualmente. Para cada um, transcreva um trecho exato da fonte fornecida.\n2. Classifique cada requisito como: ATENDIDO, NÃO ATENDIDO ou NÃO COMPROVADO.\n3. Só classifique como ATENDIDO quando houver evidência explícita no perfil. Informação ausente = NÃO COMPROVADO.\n4. Separe datas, carga horária, documentação, critérios de formação e local de trabalho.\n5. Explique contradições ou condições que exigem confirmação da organização.\n6. Não confunda interpretação do texto com verificação externa. Se não tiver acesso à fonte oficial, diga isso.\n7. Apresente uma tabela com: requisito | trecho-fonte | evidência no perfil | classificação | pendência.\n8. Finalize com um parecer preliminar, pontos a confirmar e fontes/datas efetivamente consultadas.\n9. Não conclua que há elegibilidade total com dados insuficientes.\n\nResponda em português claro, técnico e objetivo.`;
+  status.textContent='Prompt gerado com sucesso. O texto está no campo logo abaixo; clique em “Copiar prompt” para utilizá-lo em uma ferramenta de IA.';
+  button.textContent='✓ Prompt gerado';
+  return true;
+};
+form.addEventListener('submit',e=>{
+  e.preventDefault();
+  if(generate()){out.scrollIntoView({behavior:'smooth',block:'center'});out.focus({preventScroll:true});}
+});
+['texto-edital','perfil'].forEach(id=>document.getElementById(id).addEventListener('input',()=>{
+  out.value='';button.textContent='Gerar prompt estruturado';
+  status.textContent='Conteúdo atualizado. Clique em “Gerar prompt estruturado” para criar um novo prompt.';
+}));
+document.getElementById('copiar').addEventListener('click',async()=>{
+ if(!out.value) generate(); if(!out.value)return;
+ try{await navigator.clipboard.writeText(out.value);status.textContent='Prompt copiado.';}
+ catch(e){out.focus();out.select();status.textContent='Selecione e copie manualmente o texto destacado.';}
+});
+})();
+</script></body>
+</html>
